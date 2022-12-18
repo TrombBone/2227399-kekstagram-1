@@ -1,5 +1,5 @@
-import {getRandomPhotos} from './data.js';
-const photos = getRandomPhotos();
+// import {getRandomPhotos} from './data.js';
+// const photos = getRandomPhotos();
 
 import {showBigPicture} from './picture-full.js';
 
@@ -23,7 +23,7 @@ const fillPicture = function (photo) {
   photosListFragment.append(picture);
 };
 
-const renderPictures = () => {
+const renderPictures = (photos) => {
   photos.forEach((photo) => fillPicture(photo));
   pictureContainer.append(photosListFragment);
 };
